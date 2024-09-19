@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website thử nghiệm khi học học phần Thiết kế Web của lớp CNTTT1165">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Design, CNTT1165, NEU">
+    <meta name="author" content="Khoa Công nghệ thông tin - Trường Công nghệ - Đại học Kinh tế Quốc dân">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <title>Thêm mới tin tức | Website của lớp CNTT1165</title>
+    <script src="./js/ckeditor/ckeditor.js"></script>
+</head>
+<body>
+    <!-- Đoạn menu trang Web-->
+    <p style="text-align: right; font-weight: bold; color:brown">
+        <a href="./index.html">Trang chủ</a> | <a href="./gioi_thieu.html">Giới thiệu</a> | <a href="./tin_tuc.html">Tin tức</a> | <a href="./san_pham.html">Sản phẩm</a> | <a href="./lien_he.html">Liên hệ</a> | <a href="./dang_nhap.html">Đăng nhập</a>
+    </p>
+
+    <h3 style="text-align: center;">THÊM MỚI TIN TỨC</h3>
+    <form action="./thuc_hien_them_moi_tin_tuc.html" method="post">
+        <p>Tiêu đề: <input type="text" name="txtTieuDe" value=""></p>
+        <p>Mô tả: <input type="text" name="txtMoTa" value=""></p>
+        <p>Ảnh minh hoạ: <input type="file" name="txtAnhMinhHoa"></p>
+        <p>
+            <select name="txtTrangThai">
+                <option value="1">Đăng bài</option>
+                <option value="2">Lưu nháp</option>
+            </select>
+        </p>
+        <p>Nội dung bài viết: <textarea id="txtNoiDungBaiViet" name="txtNoiDungBaiViet" rows="10" cols="80"></textarea></p>
+        <p><input type="submit" name="btnThemMoi" value="Thêm mới"></p>
+    </form>
+    <script>
+        CKEDITOR.replace('txtNoiDungBaiViet', {
+        height: 200,
+        baseFloatZIndex: 10005,
+        removeButtons: 'PasteFromWord'
+        });
+    </script>
+
+
+    <!-- Đoạn chân trang Web -->
+    <hr />
+    <p style="color:brown; text-align: right; font-style: italic;">Bản quyền thuộc về: <a href="https://cntt1165.github.io" target="_blank">Lớp CNTT1165</a>, <a href="https://neu.edu.vn/" target="_blank">Đại học Kinh tế Quốc dân</a></p>
+</body>
+</html>
