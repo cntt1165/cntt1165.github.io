@@ -1,0 +1,50 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: #1abc9c;
+    color: rgb(247, 242, 222);
+    padding: 60px;
+    text-align: center;
+}
+
+p {
+    color:blueviolet;
+    opacity: 1;
+}
+
+.nhan_mo_ta {
+    color: red;
+    width: 150px;
+}
+
+#nut_submit {
+    text-transform: uppercase;
+    padding: 5px 15px;
+    background-color: coral;
+    color:white;
+    font-weight: bold;
+}
+
+div p {
+    background-color: yellow;
+    border: 1px solid;
+}
+
+a:link {
+    text-decoration: none;
+    color:black;
+}
+
+a:visited {
+    color:black
+}
+
+a:hover {
+    color: #9F224E;
+}
+
+a:active {
+    color: #9F224E;
+}

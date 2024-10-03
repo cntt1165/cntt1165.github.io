@@ -7,6 +7,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, Web Design, CNTT1165, NEU">
     <meta name="author" content="Khoa Công nghệ thông tin - Trường Công nghệ - Đại học Kinh tế Quốc dân">
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Đăng nhập | Website của lớp CNTT1165</title>
 </head>
 <body>
@@ -17,9 +18,17 @@
 
     <h3 style="text-align: center;">ĐĂNG NHẬP HỆ THỐNG</h3>
     <form action="./thuc_hien_dang_nhap.html" method="post">
-        <p>Tên tài khoản: <input type="text" name="txtTaiKhoan" value=""></p>
-        <p>Mật khẩu: <input type="password" name="txtMatKhau" value=""></p>
-        <p><input type="submit" name="btnDangNhap" value="Đăng nhập"></p>
+        <div>
+            <div class="nhan_mo_ta" style="float: left;">Tên tài khoản:</div>
+            <div style="float: left;"><input type="text" name="txtTaiKhoan" value=""></div>
+        </div>
+        <div style="clear: both;"><br></div>
+        <div>
+            <div class="nhan_mo_ta" style="float: left;">Mật khẩu:</div>
+            <div style="float: left;"><input type="password" name="txtMatKhau" value=""></div>
+        </div>
+        <div style="clear: both;"><br></div>
+        <p><input type="submit" name="btnDangNhap" id="nut_submit" value="Đăng nhập"></p>
     </form>
     <!-- Đoạn chân trang Web -->
     <hr />
