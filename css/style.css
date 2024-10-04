@@ -1,12 +1,24 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-image: url('../img/background 01.jpg');
+    background-repeat: repeat-x;
+    background-position: bottom center; */
+    background-color: aquamarine;
+    min-height: 700px;
 }
 
 header {
-    background: #1abc9c;
-    color: rgb(247, 242, 222);
+    /* background: #1abc9c; */
+    background-image: url('../img/background.jpg');
+    background-size: auto;
+    color: rgb(80, 79, 78);
     padding: 60px;
     text-align: center;
+}
+
+#duong_vien {
+    border: 20px solid orangered;
+    border-radius: 25px;
 }
 
 p {
