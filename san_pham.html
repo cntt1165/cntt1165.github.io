@@ -17,65 +17,56 @@
     </p>
     <h1 style="text-align: center; color: red">SẢN PHẨM NỔI BẬT THÁNG 09 NĂM 2024</h1>
     <style>
-        table, tr, td {
-            border: 1px solid;
+        .grid-container {
+         display: grid;
+         grid-template-columns: auto auto auto auto;
         }
-
-        table {
-            border-collapse: collapse;
+        .grid-item {
+         background-color: antiquewhite;
+         border: 1px solid rgba(0, 0, 0, 0.8);
+         padding: 10px;
+         margin: 5px;
+         text-align: center;
         }
     </style>
-    <table>
-        <tr>
-            <td style="width: 50px; text-align: center; font-weight: bold;">STT</td>
-            <td style="width: 250px; text-align: center; font-weight: bold;">Tên sản phẩm</td>
-            <td style="width: 120px; text-align: center; font-weight: bold;">Ảnh minh hoạ</td>
-            <td style="width: 120px; text-align: center; font-weight: bold;">Giá bán</td>
-            <td style="text-align: center; font-weight: bold;">Trạng thái</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Khoá học HTML cơ bản</td>
-            <td><img src="./img/course.webp" style="width: 100px; height: auto"></td>
-            <td>3.000.000 VNĐ</td>
-            <td>Còn hàng</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Khoá học HTML nâng cao</td>
-            <td><img src="./img/course.webp" style="width: 100px; height: auto"></td>
-            <td>5.000.000 VNĐ</td>
-            <td>Còn hàng</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Khoá học CSS cơ bản</td>
-            <td><img src="./img/course.webp" style="width: 100px; height: auto"></td>
-            <td>1.500.000 VNĐ</td>
-            <td>Còn hàng</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Khoá học CSS nâng cao</td>
-            <td><img src="./img/course.webp" style="width: 100px; height: auto"></td>
-            <td>3.500.000 VNĐ</td>
-            <td>Hết hàng</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Khoá học JavaScript cơ bản</td>
-            <td><img src="./img/course.webp" style="width: 100px; height: auto"></td>
-            <td>2.000.000 VNĐ</td>
-            <td>Còn hàng</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Khoá học JavaScript nâng cao</td>
-            <td><img src="./img/course.webp" style="width: 100px; height: auto"></td>
-            <td>4.000.000 VNĐ</td>
-            <td>Hết hàng</td>
-        </tr>
-    </table>
+    <div class="grid-container">
+        <div class="grid-item">
+            <p><b>Khoá học HTML cơ bản</b></p>
+            <p><img src="./img/course.webp" style="width: 180px; height: auto"></p>
+            <p><i>3.000.000 VNĐ</i></p>
+            <p style="color:red">Còn hàng</p>
+        </div>
+        <div class="grid-item">
+            <p><b>Khoá học HTML nâng cao</b></p>
+            <p><img src="./img/course.webp" style="width: 180px; height: auto"></p>
+            <p><i>5.000.000 VNĐ</i></p>
+            <p style="color:red">Còn hàng</p>
+        </div>
+        <div class="grid-item">
+            <p><b>Khoá học CSS cơ bản</b></p>
+            <p><img src="./img/course.webp" style="width: 180px; height: auto"></p>
+            <p><i>1.500.000 VNĐ</i></p>
+            <p style="color:red">Còn hàng</p>
+        </div>
+        <div class="grid-item">
+            <p><b>Khoá học CSS nâng cao</b></p>
+            <p><img src="./img/course.webp" style="width: 180px; height: auto"></p>
+            <p><i>3.500.000 VNĐ</i></p>
+            <p style="color:red">Hết hàng</p>
+        </div>
+        <div class="grid-item">
+            <p><b>Khoá học JavaScript cơ bản</b></p>
+            <p><img src="./img/course.webp" style="width: 180px; height: auto"></p>
+            <p><i>2.000.000 VNĐ</i></p>
+            <p style="color:red">Còn hàng</p>
+        </div>
+        <div class="grid-item">
+            <p><b>Khoá học JavaScript nâng cao</b></p>
+            <p><img src="./img/course.webp" style="width: 180px; height: auto"></p>
+            <p><i>4.000.000 VNĐ</i></p>
+            <p style="color:red">Còn hàng</p>
+        </div>
+    </div>
 
     <!-- Đoạn chân trang Web -->
     <hr />

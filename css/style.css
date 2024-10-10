@@ -5,6 +5,8 @@ body {
     background-position: bottom center; */
     background-color: aquamarine;
     min-height: 700px;
+    width: 800px;
+    margin: auto;
 }
 
 header {
@@ -21,11 +23,6 @@ header {
     border-radius: 25px;
 }
 
-p {
-    color:blueviolet;
-    opacity: 1;
-}
-
 .nhan_mo_ta {
     color: red;
     width: 150px;
@@ -37,11 +34,6 @@ p {
     background-color: coral;
     color:white;
     font-weight: bold;
-}
-
-div p {
-    background-color: yellow;
-    border: 1px solid;
 }
 
 a:link {

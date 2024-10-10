@@ -10,29 +10,132 @@
     <title>Trang quản trị</title>
 </head>
 <body>
-    <!-- Đoạn menu trang Web-->
-    <p style="text-align: right; font-weight: bold; color:brown">
-        <a href="./index.html">Trang chủ</a> | <a href="./gioi_thieu.html">Giới thiệu</a> | <a href="./tin_tuc.html">Tin tức</a> | <a href="./san_pham.html">Sản phẩm</a> | <a href="./lien_he.html">Liên hệ</a> | <a href="./dang_nhap.html">Đăng nhập</a>
-    </p>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-    <h1>Nội dung mô tả H1</h1>
-    <h2 style="font-size: 13pt;">Nội dung mô tả H2</h2>
-    <h3>Nội dung mô tả H3</h3>
-    <h4>Nội dung mô tả H4</h4>
-    <h5>Nội dung mô tả H5</h5>
-    <h6>Nội dung mô tả H6</h6>
+        header {
+            flex-basis: 100%;
+            background-color: gainsboro;
+            padding: 20px;
+            margin: 5px;
+        }
 
-    <hr />
-    <h4>TP HCM có thêm 1.500 căn nhà ở xã hội </h4>
-    <p><b><i>Dự án nhà ở xã hội Lê Thành Tân Kiên ở huyện Bình Chánh hoàn thành sẽ cung cấp 1.445 căn hộ diện tích 45-50 m2 cho người thu nhập thấp.</i></b></p>
-    <p style="text-align: center;">
-        <img src="./img/nha_o.jpg" style="width: 500px; height:auto;" >
-    </p>
-    <p>Công trình nằm trên đường Nguyễn Cửu Phú, xã Tân Kiên, huyện Bình Chánh được động thổ sáng 29/8, sau gần 5 năm hoàn thiện pháp lý. Đây là dự án nhà ở xã hội đầu tiên được triển khai trong năm nay trên địa bàn TP HCM.</p>
-    <p>Dự án do Công ty TNHH Thương mại - Xây dựng Lê Thành làm chủ đầu tư gồm 4 block chung cư cao 18 tầng và 2 block thương mại dịch vụ. Trong đó, diện tích sàn nhà ở xã hội khoảng 127.000 m2 với 1.445 căn, mỗi căn hộ rộng 45-50 m2, phù hợp với người độc thân, gia đình nhỏ. Công trình cũng gồm hệ thống tiện ích nội khu như: cây xanh, công viên, hồ bơi, siêu thị, trường mầm non, nhà hàng, spa, gym...</p>
+        nav{
+            flex-basis: 100%;
+            background-color: gainsboro;
+            margin: 5px;
+            display: flex;
+        }
 
-    <!-- Đoạn chân trang Web -->
-     <hr />
-    <p style="color:brown; text-align: right; font-style: italic;">Bản quyền thuộc về: <a href="https://cntt1165.github.io" target="_blank">Lớp CNTT1165</a>, <a href="https://neu.edu.vn/" target="_blank">Đại học Kinh tế Quốc dân</a></p>
+        nav a{
+            padding: 20px;
+            overflow: auto;
+            text-decoration: none;
+            color: black;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        aside.left {
+            background: #F1F1F1;
+            flex: 1 0;
+            padding: 20px;
+            margin: 5px;
+        }
+            
+        article {
+            text-align: left;
+            background: #F1F1F1;
+            flex: 3 0;
+            padding: 20px 20px 100px;
+            margin: 5px;
+        }
+            
+        aside.right {
+            background: #F1F1F1;
+            flex: 1 0;
+            padding: 20px;
+            margin: 5px;
+        }
+
+        footer{
+            background-color: gainsboro;
+            flex-basis: 100%;
+            padding: 20px;
+            margin: 5px;
+        }
+
+        @media only screen and (min-width: 1001px) {
+            body {
+                background-color: rgb(254, 72, 31);
+            }
+        }
+
+        @media only screen and (max-width: 1000px) and (min-width: 600px) {
+            body {
+                background-color: rgb(76, 255, 45);
+            }
+        }
+
+        @media only screen and (max-width: 599px) {
+            body {
+                background-color: rgb(234, 255, 4);
+            }
+            
+            nav{
+                flex-direction: column;
+            }
+
+            aside.left {
+                order: 2;
+                flex-basis: 100%;
+            }
+            article {
+                order: 1;
+                flex-basis: 100%;
+            }
+            aside.right {
+                order: 3;
+                flex-basis: 100%;
+            }
+            footer {
+                order: 4;
+            }
+        }
+    </style>
+    <div class="flex-container">
+        <header>Header</header>
+        <nav>
+            <a href="./index.html">Trang chủ</a>
+            <a href="./gioi_thieu.html">Giới thiệu</a>
+            <a href="./tin_tuc.html">Tin tức</a>
+            <a href="./san_pham.html">Sản phẩm</a>
+            <a href="./lien_he.html">Liên hệ</a>
+            <a href="./dang_nhap.html">Đăng nhập</a>
+        </nav>
+        <aside class="left">
+            Aside Left
+        </aside>
+        <article>
+            <h4>TP HCM có thêm 1.500 căn nhà ở xã hội </h4>
+            <p><b><i>Dự án nhà ở xã hội Lê Thành Tân Kiên ở huyện Bình Chánh hoàn thành sẽ cung cấp 1.445 căn hộ diện tích 45-50 m2 cho người thu nhập thấp.</i></b></p>
+            <p style="text-align: center;">
+                <img src="./img/nha_o.jpg" style="width: 500px; height:auto;" >
+            </p>
+            <p>Công trình nằm trên đường Nguyễn Cửu Phú, xã Tân Kiên, huyện Bình Chánh được động thổ sáng 29/8, sau gần 5 năm hoàn thiện pháp lý. Đây là dự án nhà ở xã hội đầu tiên được triển khai trong năm nay trên địa bàn TP HCM.</p>
+            <p>Dự án do Công ty TNHH Thương mại - Xây dựng Lê Thành làm chủ đầu tư gồm 4 block chung cư cao 18 tầng và 2 block thương mại dịch vụ. Trong đó, diện tích sàn nhà ở xã hội khoảng 127.000 m2 với 1.445 căn, mỗi căn hộ rộng 45-50 m2, phù hợp với người độc thân, gia đình nhỏ. Công trình cũng gồm hệ thống tiện ích nội khu như: cây xanh, công viên, hồ bơi, siêu thị, trường mầm non, nhà hàng, spa, gym...</p>       
+        </article>
+        <aside class="right">
+            Aside Right
+        </aside>
+
+        <footer>Bản quyền thuộc về: <a href="https://cntt1165.github.io" target="_blank">Lớp CNTT1165</a>, <a href="https://neu.edu.vn/" target="_blank">Đại học Kinh tế Quốc dân</a></footer>
+    </div>
 </body>
 </html>
