@@ -1,0 +1,1 @@
+window.alert("Chào mừng bạn tới trang Web của lớp CNTT1165!!!");

@@ -9,10 +9,36 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Trang chủ | Website của lớp CNTT1165</title>
+    <script>
+        // Yêu cầu người dùng nhập họ tên
+        var ho_ten = window.prompt("Bạn tên gì?");
+
+        // Xử lý lời chào mừng
+        var loi_chao_mung="Chào bạn "+ho_ten+" ghé thăm trang Web của lớp CNTT1165!!!";
+        window.confirm(loi_chao_mung);
+        console.log(loi_chao_mung);
+
+        // Hiển thị trang khác
+        var quang_cao = window.open("./gioi_thieu.html", "", "width=600, height=400");
+        setTimeout(function () {
+            quang_cao.close();
+        }, 3000);
+        
+        // Xử lý ngày tháng
+        const date = new Date();
+        const gio = date.getHours();
+        const phut = date.getMinutes();
+        const giay = date.getSeconds();
+        const ngay = date.getDate();
+        const thang = date.getMonth()+1;
+        const nam = date.getFullYear();
+        console.log(gio+" giờ "+phut+" phút "+giay+" giây");
+        console.log("Ngày "+ngay+" tháng "+thang+" năm "+nam);
+    </script>
 </head>
 <body>
     <!-- 
-        Mục đích: Nôị dung hiển thị trên TRANG CHỦ CHỦ
+        Mục đích: Nôị dung hiển thị trên TRANG CHỦ
         Tác giả: Nguyễn Văn A
         Liên hệ: nguyenvana@gmail.com
     -->
